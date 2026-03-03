@@ -1,0 +1,25 @@
+{
+  "rows": 5110,
+  "columns": 12,
+  "duplicates": 0,
+  "missing_bmi": 201,
+  "target_0_count": 4861,
+  "target_1_count": 249,
+  "target_0_pct": 95.13,
+  "target_1_pct": 4.87,
+  "age_mean_non_stroke": 41.971544949598844,
+  "age_mean_stroke": 67.72819277108434,
+  "glucose_mean_non_stroke": 104.79551326887471,
+  "glucose_mean_stroke": 132.54473895582328,
+  "bmi_mean_non_stroke": 28.823063829787234,
+  "bmi_mean_stroke": 30.471291866028707,
+  "corr_with_stroke": {
+    "stroke": 1.0,
+    "age": 0.245,
+    "heart_disease": 0.135,
+    "avg_glucose_level": 0.132,
+    "hypertension": 0.128,
+    "bmi": 0.042,
+    "id": 0.006
+  }
+}

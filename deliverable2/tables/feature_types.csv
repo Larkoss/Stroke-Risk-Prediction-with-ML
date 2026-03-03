@@ -1,0 +1,13 @@
+feature,dtype,feature_type,unique_values
+id,int64,Numerical,5110
+gender,str,Categorical,3
+age,float64,Numerical,104
+hypertension,int64,Binary,2
+heart_disease,int64,Binary,2
+ever_married,str,Categorical,2
+work_type,str,Categorical,5
+Residence_type,str,Categorical,2
+avg_glucose_level,float64,Numerical,3979
+bmi,float64,Numerical,418
+smoking_status,str,Categorical,4
+stroke,int64,Binary Target,2
