@@ -1,0 +1,10 @@
+{
+  "selected_models": [
+    "LogisticRegression",
+    "AdaBoost"
+  ],
+  "selected_versions": [
+    "V4",
+    "V3"
+  ]
+}

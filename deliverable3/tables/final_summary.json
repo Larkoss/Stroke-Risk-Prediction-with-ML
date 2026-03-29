@@ -1,0 +1,28 @@
+{
+  "data_path": "C:\\Users\\User\\Documents\\master\\mai643\\MAI643-Project\\deliverable2\\data\\healthcare-dataset-stroke-data.csv",
+  "random_state": 42,
+  "cv_splits": 5,
+  "selected_models": [
+    "LogisticRegression",
+    "AdaBoost"
+  ],
+  "selected_versions": [
+    "V4",
+    "V3"
+  ],
+  "best_model_combo": "V4_LogisticRegression",
+  "best_model_path": "C:\\Users\\User\\Documents\\master\\mai643\\MAI643-Project\\deliverable3\\models\\V4_LogisticRegression.joblib",
+  "best_model_metrics": {
+    "accuracy": 0.7524,
+    "balanced_accuracy": 0.775,
+    "precision": 0.1413,
+    "recall": 0.8,
+    "f1_weighted": 0.8222,
+    "f1_macro": 0.5462
+  },
+  "best_model_params": {
+    "classifier__C": 5.0,
+    "classifier__class_weight": null,
+    "classifier__solver": "lbfgs"
+  }
+}

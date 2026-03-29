@@ -1,0 +1,2 @@
+raw_rows,raw_columns,rows_after_dedup,columns_after_drop_id,duplicate_rows_removed,stroke_cases,non_stroke_cases,stroke_rate_pct,missing_bmi
+5110,12,5110,11,0,249,4861,4.87,201
