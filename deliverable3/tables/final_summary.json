@@ -1,5 +1,5 @@
 {
-  "data_path": "C:\\Users\\User\\Documents\\master\\mai643\\MAI643-Project\\deliverable2\\data\\healthcare-dataset-stroke-data.csv",
+  "data_path": "deliverable2/data/healthcare-dataset-stroke-data.csv",
   "random_state": 42,
   "cv_splits": 5,
   "selected_models": [
@@ -11,18 +11,30 @@
     "V3"
   ],
   "best_model_combo": "V4_LogisticRegression",
-  "best_model_path": "C:\\Users\\User\\Documents\\master\\mai643\\MAI643-Project\\deliverable3\\models\\V4_LogisticRegression.joblib",
+  "best_model_path": "deliverable3/models/V4_LogisticRegression.joblib",
   "best_model_metrics": {
     "accuracy": 0.7524,
     "balanced_accuracy": 0.775,
     "precision": 0.1413,
     "recall": 0.8,
     "f1_weighted": 0.8222,
-    "f1_macro": 0.5462
+    "f1_macro": 0.5462,
+    "roc_auc": 0.8444
   },
   "best_model_params": {
     "classifier__C": 5.0,
     "classifier__class_weight": null,
     "classifier__solver": "lbfgs"
+  },
+  "best_model_interpretation": {
+    "tp": 40,
+    "fn": 10,
+    "fp": 243,
+    "tn": 729,
+    "note": "Of 50 actual stroke cases in the held-out test set, 40 were correctly flagged (TP) and 10 were missed (FN \u2014 false negatives). 243 non-stroke patients were incorrectly flagged as high-risk (FP \u2014 false positives). In a population screening context, minimising false negatives is the primary goal: a missed stroke (FN) carries a far higher clinical cost than an unnecessary follow-up (FP)."
+  },
+  "design_rationale": {
+    "low_precision_is_expected": "Precision of 0.141 is low by design. The model flags 243 false positives alongside 40 true positives because it was optimised for recall (sensitivity) rather than precision. In a population-level screening tool this is the correct tradeoff: the goal is to minimise missed strokes and refer borderline cases for clinical follow-up, not to achieve high precision at the cost of undetected events.",
+    "metric_selection_rationale": "Balanced accuracy and recall were chosen as primary selection criteria because raw accuracy is misleading on this dataset (~95% accuracy is achievable by predicting no-stroke for every patient). Balanced accuracy penalises both false negatives and false positives equally, while recall directly measures the fraction of actual stroke cases detected \u2014 the clinically critical quantity."
   }
 }

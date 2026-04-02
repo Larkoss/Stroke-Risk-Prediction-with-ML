@@ -6,5 +6,38 @@
   "selected_versions": [
     "V4",
     "V3"
-  ]
+  ],
+  "insight_threshold_collapse": {
+    "description": "These model+version combinations achieve a high CV ROC-AUC (good probabilistic ranking) yet recall = 0.0 at the default 0.5 threshold (always predict no-stroke). This confirms that SMOTE is necessary to shift the decision boundary toward the minority class; AUC alone is insufficient to detect strokes without rebalancing.",
+    "affected_combinations": [
+      {
+        "dataset_version": "V1",
+        "model": "AdaBoost",
+        "roc_auc_mean": 0.8317643519603675,
+        "recall_mean": 0.0,
+        "balanced_accuracy_mean": 0.5
+      },
+      {
+        "dataset_version": "V2",
+        "model": "AdaBoost",
+        "roc_auc_mean": 0.8317643519603675,
+        "recall_mean": 0.0,
+        "balanced_accuracy_mean": 0.5
+      },
+      {
+        "dataset_version": "V1",
+        "model": "LogisticRegression",
+        "roc_auc_mean": 0.8397205270470052,
+        "recall_mean": 0.0,
+        "balanced_accuracy_mean": 0.4998714652956298
+      },
+      {
+        "dataset_version": "V2",
+        "model": "LogisticRegression",
+        "roc_auc_mean": 0.839678399196394,
+        "recall_mean": 0.0,
+        "balanced_accuracy_mean": 0.4998714652956298
+      }
+    ]
+  }
 }
