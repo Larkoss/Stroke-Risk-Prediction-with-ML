@@ -29,14 +29,14 @@
         "model": "LogisticRegression",
         "roc_auc_mean": 0.8397205270470052,
         "recall_mean": 0.0,
-        "balanced_accuracy_mean": 0.4998714652956298
+        "balanced_accuracy_mean": 0.49987146529562987
       },
       {
         "dataset_version": "V2",
         "model": "LogisticRegression",
         "roc_auc_mean": 0.839678399196394,
         "recall_mean": 0.0,
-        "balanced_accuracy_mean": 0.4998714652956298
+        "balanced_accuracy_mean": 0.49987146529562987
       }
     ]
   }
